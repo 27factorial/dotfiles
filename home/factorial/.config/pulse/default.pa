@@ -1,0 +1,5 @@
+#!/usr/bin/pulseaudio -nF
+
+.include /etc/pulse/default.pa
+
+load-module module-virtual-surround-sink sink_name=vsurround master=alsa_output.usb-Cosair_Corsair_VOID_PRO_USB_Gaming_Headset_00000000-00.analog-stereo hrir_left=/home/factorial/.local/share/atmos_l.wav hrir_right=/home/factorial/.local/share/atmos_r.wav
